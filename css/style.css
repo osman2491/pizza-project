@@ -1,63 +1,100 @@
 body {
-  background-image: url("../img/arugula-crust-food-208537.jpg");
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-top: 70px;
+}
+
+.jumbotron {
+  margin-top: -20px;
   text-align: center;
-  color: blueviolet;
-  font: normal 300 18px "Roboto", sans-serif;
+  background-color: #ebebd6;
 }
- 
-#menu-nav {
-  background-position: 
-  max-width: 1000px;
-  margin: 1px 1px;
-  background-color: #c4c717;
-  border-radius: 40px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+.pizza-image {
+  margin: 0 auto;
 }
- 
-#navigation-bar ul {
+
+.social-list li {
+  margin: 20px 0;
+}
+
+.info-boxes {
+  margin-top: 15px;
+  background-color: #ebebd6;
+}
+
+.info-box {
+  background: white;
+  margin: 20px 10px;
+  padding: 30px;
+  box-shadow: 1px 1px 2px #e7e7e7;
   border-radius: 4px;
-  overflow: hidden;
+  min-height: 275px;
 }
-#navigation-bar li {
-  float: left;
-  width: 20%;
+
+#home-carousel {
 }
-#navigation-bar li:hover a::before {
-  right: 0;
-  left: 0;
+
+.social-links i{
+  font-size: 40px;
+  vertical-align: middle;
 }
-#navigation-bar a {
-  color: #848484;
-  font-size: 20px;
-  text-decoration: none;
+
+.food-thumbnail {
+  min-height: 400px;
+}
+form{
   text-align: center;
-  padding: 20px 0;
-  display: block;
-  position: relative;
-  transition: all 0.3s ease;
 }
-#navigation-bar a:hover {
-  color: #e74c3c;
+h1{
+  text-align: center;
 }
-#navigation-bar a::before {
-  content: "";
-  transition: all 0.4s ease-in-out;
+h2{
+  text-align: center;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
   position: absolute;
-  right: 50%;
-  left: 50%;
-  bottom: 0;
-  height: 2px;
-  background-color: #e74c3c;
 }
-#navigation-bar a:hover::before {
-  right: 0;
-  left: 0;
+
+/* nothing to see here */
+
+body {
+  margin: 2em;
+  border: 0;
 }
- 
-li {
-	list-style: none;
+
+h2 {
+  text-align: left;
+}
+
+input[type="checkbox"] {
+  margin: 0 0 1.5em 0;
+}
+
+select {
+  margin: 0 0 0.5em 0.5em;
+}
+
+.textarea {
+  margin: 0 0 1em 0;
+}
+.container{
+  text-align: center;
+}
+/* Each sub-menu starts out hidden. */
+/* .initiallyHidden {
+	display:none;
+} */
+
+.menu {
+	margin-left:20px;
+}
+.info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
 }

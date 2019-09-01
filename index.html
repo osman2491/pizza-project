@@ -1,29 +1,313 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/scripts.js">
-    <link rel="stylesheet" href="js/jquery-3.4.1.js">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>pizza</title>
-</head>
-<body>
-    <div id="menu-nav">
-            <div id="navigation-bar">
-              <ul>
-                <li><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="#"><i class="fa fa-handshake"></i><span>Order now</span></a></li>
-                <li><a href="#"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li><a href="#"><i class="fa fa-book"></i><span>Contact</span></a></li>
-                <li><a href="#"><i class="fa fa-rss"></i> <span>Blog</span></a></li>
-              </ul>
-            </div></div>
-    <div class="background">
-        <h1>WELCOME.</h1>
+<div class="jumbotron">
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Pizza Hub</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+  </head>
+  <body>
+      <header class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                   </button>
+                  <a href="/" class="navbar-brand">
+                      Awesome Pizza
+                  </a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/">About</a></li>
+                      <li><a href="/">Contact</a></li>
+
+                  </ul>
+              </div>
+          </div>
+      </header>
+  <div class="container">
+        <h1>Awesome Pizza</h1>
+        <p>
+            Best pizza in town!
+        </p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div id="home-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#home-carousel" data-slide-to="1"></li>
+                <li data-target="#home-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/pizza.jpg" alt="Food">
+                    <div class="carousel-caption">
+                        <h2>
+                            Delicious Pizza!
+                        </h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/pizza copy.jpg" alt="Food">
+                    <div class="carousel-caption">
+                        <h2>
+                            Great Sides!
+                        </h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/pizza.jpg" alt="Food">
+                    <div class="carousel-caption">
+                        <h2>
+                            Amazing Salads!
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#home-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#home-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
         </div>
     </div>
+</div>
+<div class="container">
+	<h1>Pizza Order Menu</h1>
+	<br>
+  <p><div class="info">
+    <p><strong>Info!</strong>Click on a heading to expand that option...</p>
+  </div></p>
+  
+	<br>
+	<!-- Here is the table where size is selected. -->
+	<div id="sizetable">
+		<h3 class="tablehead">Select size*:</h3>
+		<div class="menu initiallyHidden">	
+			<input type="radio" name="size" value="Personal"> Personal<br>
+			<input type="radio" name="size" value="Medium"> Medium<br>
+			<input type="radio" name="size" value="Large"> Large<br>
+			<input type="radio" name="size" value="Extra-Large"> Extra-Large<br>
+		</div>
+	</div>
+  <br>
+  <div id="sizetable">
+		<h3 class="tablehead">Select size*:</h3>
+		<div class="menu initiallyHidden">	
+			<input type="radio" name="size" value="Personal"> Personal<br>
+			<input type="radio" name="size" value="Medium"> Medium<br>
+			<input type="radio" name="size" value="Large"> Large<br>
+			<input type="radio" name="size" value="Extra-Large"> Extra-Large<br>
+		</div>
+	</div>
+	<br>
+	<!-- Here is the table where cheese is selected. -->
+	<div id="cheesetable">
+		<h3 class="tablehead">Select cheese*:</h3>
+		<div class="menu initiallyHidden">	
+			<input type="radio" name="cheese" value="No"> No Cheese<br>
+			<input type="radio" name="cheese" value="Regular"> Regular<br>
+			<input type="radio" name="cheese" value="Extra"> Extra Cheese<br>
+		</div>
+	</div>
+	<br>
+	<!-- Here is the table where crust type is selected. -->
+	<div id="crusttable">
+		<h3 class="tablehead">Select crust*:</h3>
+		<div class="menu initiallyHidden">	
+			<input type="radio" name="crust" value="Plain"> Plain Crust<br>
+			<input type="radio" name="crust" value="Garlic Butter"> Garlic Butter Crust<br>
+			<input type="radio" name="crust" value="Cheese-Stuffed"> Cheese-Stuffed Crust<br>
+			<input type="radio" name="crust" value="Spicy"> Spicy Crust<br>
+			<input type="radio" name="crust" value="House Special"> House Special Crust<br>
+		</div>
+	</div>
+	<br>
+	<!-- Here is the table where sauce type is selected. -->
+	<div id="saucetable">
+		<h3 class="tablehead">Select sauce*:</h3>
+		<div class="menu initiallyHidden">	
+			<input type="radio" name="sauce" value="Marinara"> Marinara Sauce<br>
+			<input type="radio" name="sauce" value="White"> White Sauce<br>
+			<input type="radio" name="sauce" value="Barbecue"> Barbecue Sauce<br>
+			<input type="radio" name="sauce" value="No"> No Sauce<br>
+		</div>
+	</div>
+	<br>
+	<!-- Here is the table where multiple meats may be selected. -->
+	<div id="meattable">
+		<h3 class="tablehead">Select your choice of meat(s):</h3>
+		<div class="menu initiallyHidden">
+			<input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+			<input type="checkbox" name="meat" value="Sausage"> Sausage<br>
+			<input type="checkbox" name="meat" value="Canadian Bacon"> Canadian Bacon<br>
+			<input type="checkbox" name="meat" value="Ground Beef"> Ground Beef<br>
+			<input type="checkbox" name="meat" value="Anchovies"> Anchovies<br>
+			<input type="checkbox" name="meat" value="Chicken"> Chicken<br>
+		</div>
+	</div>
+	<br>
+	<!-- Here is the table where multiple veg may be selected. -->
+	<div id="vegtable">
+		<h3 class="tablehead">Select your choice of veggie(s):</h3>
+		<div class="menu initiallyHidden">
+			<input type="checkbox" name="veg" value="Tomatoes"> Fresh Tomatoes<br>
+			<input type="checkbox" name="veg" value="Onions"> Onions<br>
+			<input type="checkbox" name="veg" value="Olives"> Black Olives<br>
+			<input type="checkbox" name="veg" value="Green Peppers"> Green Peppers<br>
+			<input type="checkbox" name="veg" value="Mushrooms"> Mushrooms<br>
+			<input type="checkbox" name="veg" value="Pineapple"> Pineapple<br>
+			<input type="checkbox" name="veg" value="Spinach"> Spinach<br>
+			<input type="checkbox" name="veg" value="Jalape&ntildeo"> Jalape&ntildeo<br>
+		</div>
+	</div>
+	<br>
+	<br>
+	<button id="calc" type="submit" onclick="invoice()">Submit order</button>
+	<br><br>
+	<table class="pizza" style="width: 50%;" border="1" cellpadding="5">
+		<tbody>
+			<tr>
+				<td id="size"></td>
+				<td id="sizeprice"></td>
+			</tr>
+			<tr>
+				<td id="crust"></td>
+				<td id="crustprice"></td>
+			</tr>
+			<tr>
+				<td id="cheese"></td>
+				<td id="cheeseprice"></td>
+			</tr>
+			<tr>
+				<td id="sauce"></td>
+				<td id="sauceprice"></td>
+			</tr>
+			<tr>
+				<td id="meat"></td>
+				<td id="meatprice"></td>
+			</tr>
+			<tr>
+				<td id="veg"></td>
+				<td id="vegprice"></td>
+			</tr>
+			<tr>
+			  <td><strong>TOTAL PRICE:</strong></td>
+				<td id="totalprice"></td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<br>
+</div>
+<br>
+<br>
+<!-- <button id="calc" type="submit" onclick="invoice()">Submit order</button> -->
+<br><br>
+<table class="pizza" style="width: 50%;" border="1" cellpadding="5">
+	<tbody>
+		<tr>
+			<td id="size"></td>
+			<td id="sizeprice"></td>
+		</tr>
+		<tr>
+			<td id="crust"></td>
+			<td id="crustprice"></td>
+		</tr>
+		<tr>
+			<td id="cheese"></td>
+			<td id="cheeseprice"></td>
+		</tr>
+		<tr>
+			<td id="sauce"></td>
+			<td id="sauceprice"></td>
+		</tr>
+		<tr>
+			<td id="meat"></td>
+			<td id="meatprice"></td>
+		</tr>
+		<tr>
+			<td id="veg"></td>
+			<td id="vegprice"></td>
+		</tr>
+	</tbody>
+</table>
+<div class="info-boxes">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="info-box">
+                    <h2>
+                        Address
+                    </h2>
+                    <address>
+                      <strong>Awesome Pizza.</strong><br>
+                      348 East Main St.<br>
+                      Lexington, KY 40508<br>
+                      <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="info-box social-links">
+                    <h2>Social Links</h2>
+                    <ul class="list-unstyled social-list">
+                        <li>
+                            <i class="fa fa-twitter-square"></i>
+                            <a href="#">
+                                @awesome_pizza
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa fa-facebook-square"></i>
+                            <a href="#">Facebook</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="info-box">
+                    <h2>Reviews</h2>
+                    <blockquote>
+                        This pizza is the best!
+                        <footer>Happy customer <cite title="Nick Such">Nick Such</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+  <div class="container">
+      <hr>
+      &copy; 2016 Awesome Pizza 
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+<script src="js/scripts.js"></script>
 </body>
 </html>
