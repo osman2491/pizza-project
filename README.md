@@ -11,7 +11,7 @@ Known Bugs
 No bugs that I am aware of, but it isn't very pretty!
 
 ## Support and contact details
-Contact osman mohamed @ osman67239121@gmail.com with questions/concerns. To find out more about learning to code at Epicodus, contact Debbie Cravey @ debbie@epicodus.com
+Contact osman mohamed @ osman67239121@gmail.com with questions/concerns. To find out more about learning to code at Epicodus,
 
 ## Technologies Used
 HTML
