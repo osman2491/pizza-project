@@ -117,7 +117,7 @@ $("#meatprice").html("+"+meatPrice+".00");
 $("#veg").html(vegDisplay);
 $("#vegprice").html("+"+vegPrice+".00");
 $("#totalprice").html(" ksh/"+totalPrice+".00");
-alert('order recieved and we are processing your payment in seconds')
+alert('order recieved and we are processing your payment in seconds!')
 
 
 
