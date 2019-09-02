@@ -1,6 +1,6 @@
 ## pizza project
 A pizza restaurant website using HTML, CSS, Bootstrap, JavaScript, & jQuery, with an emphasis on constructors & prototypes.
-By osman mohamed
+By osman mohamed.
 ## Description:
 This project is designed to practice using constructors, prototypes, and checkboxes to calculate a total sum based on user input.
 
