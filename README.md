@@ -4,16 +4,16 @@ By osman mohamed.
 ## Description:
 This project is designed to practice using constructors, prototypes, and checkboxes to calculate a total sum based on user input.
 
-## Setup/Installation Requirements
+## Setup/Installation Requirements.
 Clone this repository
 Open your browser of choice
 Known Bugs
 No bugs that I am aware of, but it isn't very pretty!
 
-## Support and contact details
+## Support and contact details.
 Contact osman mohamed @ osman67239121@gmail.com with questions/concerns. To find out more about learning to code at Epicodus,
 
-## Technologies Used
+## Technologies Used.
 HTML
 CSS
 Bootstrap
@@ -21,9 +21,9 @@ Git & Github
 JavaScript
 jQuery
 
-## License
+## License.
 Licensed under MIT.
-Copyright (c) [2019] [osman Mohamed]
+Copyright (c) [2019] [osman Mohamed].
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
