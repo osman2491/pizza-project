@@ -10,16 +10,16 @@ function invoice() {
 var size = document.querySelector('input[name="size"]:checked').value; console.log("size="+size);
 var sizePrice = 0;
 if (size === "Personal") {
-    sizePrice = 6;
+    sizePrice = 2000;
 };
 if (size === "Medium") {
-    sizePrice = 10;
+    sizePrice = 800;
 };
 if (size === "Large") {
-    sizePrice = 14;
+    sizePrice = 1000;
 };
 if (size === "Extra-Large") {
-    sizePrice = 16;
+    sizePrice = 2000;
 }; console.log("sizePrice="+sizePrice);
 
 // Setting cheese and cheesePrice based on size + extra cheese selection
@@ -27,28 +27,28 @@ var cheese = document.querySelector('input[name="cheese"]:checked').value; conso
 var cheesePrice = 0;
 if (cheese === "Extra") {
     if (size === "Personal") {
-        cheesePrice = 1;
+        cheesePrice = 200;
     } else if (size === "Medium") {
-        cheesePrice = 2;
+        cheesePrice = 100;
     } else if (size === "Large") {
-        cheesePrice = 3;
+        cheesePrice = 150;
     } else {
-        cheesePrice = 4;
+        cheesePrice = 200;
     };
 }; console.log("cheesePrice="+cheesePrice);
 
 // Setting crust and crustPrice based on selection
 var crust = document.querySelector('input[name="crust"]:checked').value; console.log("crust="+crust);
-var crustPrice = 0
+var crustPrice = 100
 if (crust="Cheese-Stuffed") {
-    crustPrice = 3;
+    crustPrice = 100;
 }; console.log("crustPrice="+crustPrice);
 
 // Setting sauce based on selection
 var sauce = document.querySelector('input[name="sauce"]:checked').value; console.log("sauce="+sauce);
 
 // Setting meatSelect array and meatPrice based on multiple check boxes selected. Also setting up meatDisplay to convert the array into a convenient string.
-var meatPrice = 0
+var meatPrice = 100
 var meat = document.getElementsByName("meat");
 var meatSelect = [];
 var meatDisplay = "";
@@ -67,13 +67,13 @@ if (meatSelect.length === 1) {
             };
     };
 };		
-meatPrice = meatSelect.length * 2; console.log("meatPrice="+meatPrice);
+meatPrice = meatSelect.length * 100; console.log("meatPrice="+meatPrice);
 if (meatSelect.length === 0) {
     meatDisplay = "No Meats";
 }
 
 // Setting vegSelect array and vegPrice based on multiple check boxes selected
-var vegPrice = 0;
+var vegPrice = 50;
 var veg = document.getElementsByName("veg");
 var vegSelect = [];
 var vegDisplay = "";
@@ -82,7 +82,7 @@ for (var i = 0; i<veg.length; i++) {
         vegSelect.push(veg[i].value);
     };
 }; console.log("vegSelect="+vegSelect);
-if (vegSelect.length > 4) {
+if (vegSelect.length > 50) {
     vegPrice = 2;
 }; console.log("vegPrice="+vegPrice);
 if (vegSelect.length === 1) {
@@ -105,7 +105,7 @@ var totalPrice = (vegPrice + meatPrice + crustPrice + cheesePrice + sizePrice); 
 
 // Enter values into the invoice table
 $("#size").html(size+" Pizza");
-$("#sizeprice").html(" $"+sizePrice+".00");
+$("#sizeprice").html(" ksh"+sizePrice+".00");
 $("#crust").html(crust+" Crust");
 $("#crustprice").html("+"+crustPrice+".00");
 $("#cheese").html(cheese+" Cheese");
@@ -116,7 +116,7 @@ $("#meat").html(meatDisplay);
 $("#meatprice").html("+"+meatPrice+".00");
 $("#veg").html(vegDisplay);
 $("#vegprice").html("+"+vegPrice+".00");
-$("#totalprice").html(" $"+totalPrice+".00");
+$("#totalprice").html(" ksh/"+totalPrice+".00");
 alert('order recieved and we are processing your payment in seconds')
 
 
